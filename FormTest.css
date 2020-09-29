@@ -1,0 +1,39 @@
+form{
+    margin-top: 50px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    display: block;
+    box-shadow: 1px 2px 5px black;
+}
+form input,textarea{
+    padding: 10px;
+    width: 100%;
+}
+form .Input{
+    width: 95%;
+    margin-top: 20px;
+}
+.phone-number{
+    display: grid;
+    grid-template-columns: 40% 59%;
+    grid-gap: 10px;
+}
+form small{
+    color: red;
+    padding: 5px;
+    display: none;
+    transition: .2s;
+}
+form button{
+    width: 100%;
+    display: block;
+    padding: 10px 0px;
+    margin-top: 20px;
+    border: none;
+    background-color: chartreuse;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.2);
+    /* margin-left: 40%; */
+}
