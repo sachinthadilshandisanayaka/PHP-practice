@@ -46,10 +46,27 @@
         document.getElementById('Form').addEventListener('submit', (event) => {
             var pw = document.getElementById("password");
             var cPw = document.getElementById("Cpassword");
+            var inputs = document.getElementsByTagName('INPUT');
 
             if (pw.value != cPw.value){
                 event.preventDefault();
-                alert (pw.value +" "+ cPw.value);
+                alert ("password not match");
+            }
+            if(inputs[0].value.trim() == ""){
+                event.preventDefault();
+                alert("name is required");
+            }
+            if(inputs[1].value.trim() == ""){
+                event.preventDefault();
+                alert("email is required");
+            }
+            if(inputs[2].value.trim() == ""){
+                event.preventDefault();
+                alert("password is required");
+            }
+            if(inputs[3].value.trim() == ""){
+                event.preventDefault();
+                alert("conform password is required");
             }
 
         });
