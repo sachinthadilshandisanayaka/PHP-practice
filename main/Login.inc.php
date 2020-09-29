@@ -34,6 +34,23 @@
         </div>
         <button type="submit">Log In</button>
     </form>
+<script>
 
+    var inputs = document.getElementsByTagName('INPUT');
+
+    document.getElementById("Form").addEventListener('submit', (event) => {
+        
+        if(inputs[0].value.trim() == ""){
+            event.preventDefault();
+            alert("email is empty");
+        }
+        if(inputs[1].value.trim() == ""){
+            event.preventDefault();
+            alert("password is empty");
+        }
+
+    });
+
+</script>
 </body>
 </html>
