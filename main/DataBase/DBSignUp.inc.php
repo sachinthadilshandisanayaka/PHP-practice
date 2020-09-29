@@ -17,7 +17,7 @@ try{
 
         if( $stm2->rowCount() > 0) {
 
-            header("Location: ../DBSignUp.inc.php?er=2");
+            header("Location: ../SignUp.inc.php?er=2");
 
         } else {
 
@@ -30,7 +30,7 @@ try{
             if( $stm->rowCount() == 1){
                 header("Location: ../Login.inc.php?er=100");
             } else{
-                header("Location: ../DBSignUp.inc.php?er=1");
+                header("Location: ../SignUp.inc.php?er=1");
             }
         }
 
