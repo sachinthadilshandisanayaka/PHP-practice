@@ -18,7 +18,7 @@
         </div>
         <div class="inputs">
             <label for="email">Email</label>
-            <input type="email" name="emal" id="">
+            <input type="email" name="email" id="">
         </div>
         <div class="inputs">
             <label for="password">Password</label>
@@ -32,11 +32,12 @@
     </form>
     <script>
         document.getElementById('Form').addEventListener('submit', (event) => {
-            var pw = document.getElementById('password');
-            var cPw = document.getElementById('Cpassword');
+            var pw = document.getElementById("password");
+            var cPw = document.getElementById("Cpassword");
 
-            if (pw != cPw){
+            if (pw.value != cPw.value){
                 event.preventDefault();
+                alert (pw.value +" "+ cPw.value);
             }
 
         });

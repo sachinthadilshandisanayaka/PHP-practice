@@ -10,18 +10,18 @@
         <a href="SignUp.inc.php"><button>Sign Up</button></a>
     </div>
 
-    <form action="POST" id="Form" enctype="multipart/form-data">
+    <form action="DataBase/DBlog.inc.php" method="POST" id="Form" enctype="multipart/form-data">
 
         <div class="inputs">
             <label for="email">Email</label>
-            <input type="email" name="emal" id="">
+            <input type="email" name="email" id="">
         </div>
         <div class="inputs">
             <label for="password">Password</label>
             <input type="password" name="password" id="">
         </div>
-    
+        <button type="submit">Log In</button>
     </form>
-    
+
 </body>
 </html>
