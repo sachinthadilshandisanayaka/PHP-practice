@@ -19,7 +19,7 @@ try{
             echo "Log in successfully<br>";
         } else {
             echo $pw;
-            // header("Location: ../Login.inc.php?er=1");
+            header("Location: ../Login.inc.php?er=1");
         }
 
     } catch(PDOException $e){

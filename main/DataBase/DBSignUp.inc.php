@@ -16,7 +16,7 @@ try{
         $stm2->execute();
 
         if( $stm2->rowCount() > 0) {
-            
+
             header("Location: ../DBSignUp.inc.php?er=2");
 
         } else {
@@ -28,7 +28,7 @@ try{
             $stm->execute();
         
             if( $stm->rowCount() == 1){
-                header("Location: ../Login.inc.php?sc=1");
+                header("Location: ../Login.inc.php?er=100");
             } else{
                 header("Location: ../DBSignUp.inc.php?er=1");
             }
