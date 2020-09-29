@@ -10,7 +10,7 @@
         <a href="Login.inc.php"><button>LogIn</button></a>
     </section>
 
-    <form action="POST" enctype="multipart/form-data" id="Form">
+    <form action="DataBase/DBSignUp.inc.php" method="POST" enctype="multipart/form-data" id="Form">
 
         <div class="inputs">
             <label for="name">Name</label>
@@ -28,8 +28,13 @@
             <label for="Conformpassword">Conform password</label>
             <input type="password" name="Cpassword" id="">
         </div>
-
+        <button type="submit">Sing Up</button>
     </form>
-    
+    <script>
+        document.getElementById('Form').addEventListener('submit', (event) => {
+
+
+        });
+    </script>
 </body>
 </html>
