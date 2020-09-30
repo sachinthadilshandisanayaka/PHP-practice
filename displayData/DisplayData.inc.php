@@ -24,6 +24,7 @@
                     echo "<div class=\"image\"><img src=\"../upload/".$row['attachment']."\"></div>";
                     echo "<p>".$row['name']."</p>";
                     echo "<p>".$row['email']."</p>";
+                    echo "<p>".$row['birthday']."</p>";
                     echo "<p>".$row['countryCode']." - ".$row['telephone']."</p>";
                     echo "<p>".$row['message']."</p>";
                 echo "</div>";
