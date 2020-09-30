@@ -24,3 +24,17 @@
     width: 100%;
     height: 100%;
 }
+.scrollUp{
+    border: none;
+    background-color: white;
+    margin-left: 95%;
+}
+.scrollUp i{
+    /* padding: 10px; */
+    cursor: pointer;
+    font-size: xx-large;
+    transition: .2s;
+}
+.scrollUp i:hover{
+    transform: scale(1.2);
+}
