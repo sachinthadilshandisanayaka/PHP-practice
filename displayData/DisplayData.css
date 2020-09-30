@@ -1,4 +1,6 @@
-
+html{
+    scroll-behavior: smooth;
+}
 .displayitems{
 
     width: 50%;
@@ -27,14 +29,22 @@
 .scrollUp{
     border: none;
     background-color: white;
-    margin-left: 95%;
+    /* margin-left: 95%;
+    margin-bottom: 20px; */
+    position: fixed;
+    right: 2%;
+    bottom: 5%;
+    display: none;
+    border-radius: 50%;
 }
 .scrollUp i{
     /* padding: 10px; */
     cursor: pointer;
     font-size: xx-large;
+    border-radius: 50%;
     transition: .2s;
 }
 .scrollUp i:hover{
+    box-shadow: 1px 1px 5px black;
     transform: scale(1.2);
 }

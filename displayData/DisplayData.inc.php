@@ -40,7 +40,24 @@
     }
    
 ?>
-    <button class="scrollUp"><i class='fas fa-arrow-alt-circle-up'></i></button>
+    <button class="scrollUp" id="scroll" ><i class='fas fa-arrow-alt-circle-up' onclick="scrolltop()"></i></button>
+
+    <script>
+        window.onscroll = function() {scroll()};
+
+        function scroll(){
+            if( document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+                document.getElementById("scroll").style.display= "block";
+            } else{
+                document.getElementById("scroll").style.display= "none";
+            }
+        }
+        function scrolltop(){
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+       
+    </script>
     
 </body>
 </html>
