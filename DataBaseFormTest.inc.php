@@ -17,10 +17,11 @@
     $code = trim($_REQUEST['telephone']);
     $tele = trim($_REQUEST['number']);
     $message = trim($_REQUEST['message']);
+    $birthday = trim($_REQUEST['date']);
 
     try {
-        $stm = $conn->prepare("INSERT INTO user (name, email, countryCode, telephone, message, attachment)
-        VALUES (:name, :email, :code, :tele, :message, :attachment)");
+        $stm = $conn->prepare("INSERT INTO user (name, email, countryCode, telephone, message, attachment, birthday)
+        VALUES (:name, :email, :code, :tele, :message, :attachment, :bdy)");
     
         $stm->bindParam(':name', $name);
         $stm->bindParam(':email', $email);
@@ -28,6 +29,7 @@
         $stm->bindParam(':tele', $tele);
         $stm->bindParam(':message', $message);
         $stm->bindParam(':attachment', $attachment);
+        $stm->bindParam(':bdy', $birthday);
         $stm->execute();
 
         if($stm->rowCount() == 1){
