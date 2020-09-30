@@ -35,6 +35,13 @@
             <label for="email">Email</label>
             <input type="email" name="email">
         </div>
+
+        <div class="Input">
+            <label for="birthday">Birth Day</label>
+            <input type="date" name="date">
+        </div>
+
+
         <small id="s2">Email is required</small>
 
         <div class="Input">
