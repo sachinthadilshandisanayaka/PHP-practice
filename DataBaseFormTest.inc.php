@@ -2,7 +2,7 @@
     require 'db.inc.php';
 
     $file = $_FILES['file1'];
-    $fileName = $_FILES['file1']['name'];
+    $fileName = $_FILES['file1']['name']; // file name ex: apple.png
     $fileTempName = $_FILES['file1']['tmp_name'];
     $fileType = $_FILES['file1']['type'];
     $fileError = $_FILES['file1']['error'];
